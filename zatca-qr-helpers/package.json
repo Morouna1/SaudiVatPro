@@ -1,0 +1,48 @@
+{
+  "name": "saudivatpro-qrtool",
+  "version": "1.0.0",
+  "description": "Free TypeScript utilities for encoding, decoding, and validating ZATCA Phase 1 QR codes (TLV base64). Works in browsers and Node.js.",
+  "keywords": [
+    "zatca",
+    "qr-code",
+    "tlv",
+    "saudi-vat",
+    "e-invoicing",
+    "phase-1",
+    "ksa"
+  ],
+  "license": "MIT",
+  "author": "Saudi VAT Pro <hello@saudivat.pro> (https://saudivat.pro)",
+  "homepage": "https://github.com/Morouna1/SaudiVatPro/tree/main/zatca-qr-helpers#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morouna1/SaudiVatPro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Morouna1/SaudiVatPro/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Saudi VAT Pro Support Center
+    url: https://saudivat.pro/support
+    about: Account-specific help (billing, credentials, invoice data) — 24/7 AI-assisted support.
+  - name: Knowledge Center
+    url: https://saudivat.pro/knowledge
+    about: Free guides on ZATCA Phase 2, QR codes, VAT categories, and error codes.
