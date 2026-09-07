@@ -1,0 +1,59 @@
+{
+  "name": "saudi-vat-pro-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.morouna1/saudi-vat-pro",
+  "description": "MCP server for Saudi VAT Pro — submit and manage ZATCA-compliant invoices from Claude Desktop, Cursor, Windsurf, and any MCP-compatible AI agent",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "zatca",
+    "saudi",
+    "vat",
+    "invoice",
+    "e-invoice",
+    "fatoora",
+    "phase2",
+    "clearance",
+    "claude"
+  ],
+  "homepage": "https://saudivatpro.com/docs#aiagents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morouna1/SaudiVatPro.git",
+    "directory": "mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/Morouna1/SaudiVatPro/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "saudi-vat-pro-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "pnpm run build && node test/integration.mjs",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
