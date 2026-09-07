@@ -21,6 +21,7 @@ Every paid order becomes a ZATCA-compliant invoice. Every refund becomes a credi
 | [`woocommerce-plugin/`](./woocommerce-plugin/) | GPLv2 WooCommerce plugin — automatic ZATCA invoicing for every WooCommerce order |
 | [`zatca-qr-helpers/`](./zatca-qr-helpers/) | Open-source TLV encode/decode library behind the [free ZATCA QR Tool](https://saudivat.pro/zatca-qr/) |
 | [`docs/`](./docs/) | Support guides: ZATCA Phase 2 overview, QR code explained, common errors |
+| [Saudi VAT Pro MCP](https://github.com/Morouna1/saudi-vat-pro-mcp) | MCP server for Claude, Cursor, Windsurf, and other AI agents |
 
 ---
 
@@ -44,6 +45,44 @@ Saudi VAT Pro handles the complexity of ZATCA Phase 2 compliance so you don't ha
 | WooCommerce | [Plugin in this repo](./woocommerce-plugin/) — install, enter API key, done |
 | Shopify | Webhook integration — documented at [saudivat.pro/docs](https://saudivat.pro/docs) |
 | Custom / ERP | REST API — see [API documentation](https://saudivat.pro/docs) |
+| AI agents | [Saudi VAT Pro MCP](https://github.com/Morouna1/saudi-vat-pro-mcp) — Claude, Cursor, Windsurf, and generic MCP clients |
+
+---
+
+## AI Agents & Model Context Protocol
+
+The [Saudi VAT Pro MCP server](https://github.com/Morouna1/saudi-vat-pro-mcp) lets MCP-compatible AI assistants create and manage ZATCA invoices through the Saudi VAT Pro API.
+
+```json
+{
+  "mcpServers": {
+    "saudi-vat-pro": {
+      "command": "npx",
+      "args": ["saudi-vat-pro-mcp"],
+      "env": {
+        "SAUDI_VAT_PRO_API_KEY": "svp_live_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+Available tools cover invoice listing and details, standard and simplified invoice creation, idempotent credit notes, failed-invoice retries and explanations, merchant details, dashboard summaries, and ZATCA certificate readiness.
+
+The server gives agents explicit ZATCA safeguards:
+
+- Standard B2B invoices require buyer name, city, and a valid 15-digit VAT number
+- VAT categories, rates, VATEX exemption reasons, and line discounts are validated before submission
+- Sandbox and production environments are clearly distinguished
+- Credit-note retries require an idempotency key to prevent duplicate refunds
+- Every result exposes its actual lifecycle status instead of assuming clearance or reporting succeeded
+
+**Canonical links**
+
+- Source: [github.com/Morouna1/saudi-vat-pro-mcp](https://github.com/Morouna1/saudi-vat-pro-mcp)
+- Setup and API key: [saudivatpro.com/docs#aiagents](https://saudivatpro.com/docs#aiagents)
+- npm: [`saudi-vat-pro-mcp`](https://www.npmjs.com/package/saudi-vat-pro-mcp) *(publication pending)*
+- Official MCP Registry: `io.github.morouna1/saudi-vat-pro` *(publication pending)*
 
 ---
 
