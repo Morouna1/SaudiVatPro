@@ -81,8 +81,8 @@ The server gives agents explicit ZATCA safeguards:
 
 - Source: [`mcp-server/`](./mcp-server/)
 - Setup and API key: [saudivatpro.com/docs#aiagents](https://saudivatpro.com/docs#aiagents)
-- npm: [`saudi-vat-pro-mcp`](https://www.npmjs.com/package/saudi-vat-pro-mcp) *(publication pending)*
-- Official MCP Registry: `io.github.morouna1/saudi-vat-pro` *(publication pending)*
+- npm: [`saudi-vat-pro-mcp`](https://www.npmjs.com/package/saudi-vat-pro-mcp)
+- Official MCP Registry: [`io.github.Morouna1/saudi-vat-pro`](https://registry.modelcontextprotocol.io/?q=io.github.Morouna1%2Fsaudi-vat-pro)
 
 ---
 
