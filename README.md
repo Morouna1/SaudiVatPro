@@ -21,7 +21,7 @@ Every paid order becomes a ZATCA-compliant invoice. Every refund becomes a credi
 | [`woocommerce-plugin/`](./woocommerce-plugin/) | GPLv2 WooCommerce plugin — automatic ZATCA invoicing for every WooCommerce order |
 | [`zatca-qr-helpers/`](./zatca-qr-helpers/) | Open-source TLV encode/decode library behind the [free ZATCA QR Tool](https://saudivat.pro/zatca-qr/) |
 | [`docs/`](./docs/) | Support guides: ZATCA Phase 2 overview, QR code explained, common errors |
-| [Saudi VAT Pro MCP](https://github.com/Morouna1/saudi-vat-pro-mcp) | MCP server for Claude, Cursor, Windsurf, and other AI agents |
+| [`mcp-server/`](./mcp-server/) | MCP server for Claude, Cursor, Windsurf, and other AI agents |
 
 ---
 
@@ -45,13 +45,13 @@ Saudi VAT Pro handles the complexity of ZATCA Phase 2 compliance so you don't ha
 | WooCommerce | [Plugin in this repo](./woocommerce-plugin/) — install, enter API key, done |
 | Shopify | Webhook integration — documented at [saudivat.pro/docs](https://saudivat.pro/docs) |
 | Custom / ERP | REST API — see [API documentation](https://saudivat.pro/docs) |
-| AI agents | [Saudi VAT Pro MCP](https://github.com/Morouna1/saudi-vat-pro-mcp) — Claude, Cursor, Windsurf, and generic MCP clients |
+| AI agents | [Saudi VAT Pro MCP](./mcp-server/) — Claude, Cursor, Windsurf, and generic MCP clients |
 
 ---
 
 ## AI Agents & Model Context Protocol
 
-The [Saudi VAT Pro MCP server](https://github.com/Morouna1/saudi-vat-pro-mcp) lets MCP-compatible AI assistants create and manage ZATCA invoices through the Saudi VAT Pro API.
+The [Saudi VAT Pro MCP server](./mcp-server/) lets MCP-compatible AI assistants create and manage ZATCA invoices through the Saudi VAT Pro API.
 
 ```json
 {
@@ -79,7 +79,7 @@ The server gives agents explicit ZATCA safeguards:
 
 **Canonical links**
 
-- Source: [github.com/Morouna1/saudi-vat-pro-mcp](https://github.com/Morouna1/saudi-vat-pro-mcp)
+- Source: [`mcp-server/`](./mcp-server/)
 - Setup and API key: [saudivatpro.com/docs#aiagents](https://saudivatpro.com/docs#aiagents)
 - npm: [`saudi-vat-pro-mcp`](https://www.npmjs.com/package/saudi-vat-pro-mcp) *(publication pending)*
 - Official MCP Registry: `io.github.morouna1/saudi-vat-pro` *(publication pending)*
