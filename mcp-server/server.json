@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.morouna1/saudi-vat-pro",
+  "name": "io.github.Morouna1/saudi-vat-pro",
   "description": "Submit and manage ZATCA-compliant Saudi e-invoices through Saudi VAT Pro.",
   "repository": {
     "url": "https://github.com/Morouna1/SaudiVatPro",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "saudi-vat-pro-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
