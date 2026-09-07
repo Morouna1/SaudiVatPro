@@ -1,0 +1,7 @@
+# Source TypeScript files are compiled to dist/ by prepublishOnly; exclude them from the package.
+src/
+tsconfig.json
+*.tgz
+
+# Development files
+node_modules/
