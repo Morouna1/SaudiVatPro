@@ -1,7 +1,7 @@
 {
   "name": "saudi-vat-pro-mcp",
-  "version": "1.0.0",
-  "mcpName": "io.github.morouna1/saudi-vat-pro",
+  "version": "1.0.1",
+  "mcpName": "io.github.Morouna1/saudi-vat-pro",
   "description": "MCP server for Saudi VAT Pro — submit and manage ZATCA-compliant invoices from Claude Desktop, Cursor, Windsurf, and any MCP-compatible AI agent",
   "keywords": [
     "mcp",
@@ -29,7 +29,7 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "saudi-vat-pro-mcp": "./dist/index.js"
+    "saudi-vat-pro-mcp": "dist/index.js"
   },
   "files": [
     "dist",
