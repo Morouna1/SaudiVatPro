@@ -131,7 +131,7 @@ The key remains in the local MCP process environment. Invoice requests and tool 
 - [API Documentation](https://saudivatpro.com/docs) — full REST API reference
 - [GitHub source](https://github.com/Morouna1/SaudiVatPro/tree/main/mcp-server)
 - [npm package](https://www.npmjs.com/package/saudi-vat-pro-mcp)
-- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.morouna1%2Fsaudi-vat-pro)
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.Morouna1%2Fsaudi-vat-pro)
 - [ZATCA Fatoora Portal](https://fatoora.zatca.gov.sa) — official ZATCA portal
 
 ## License
